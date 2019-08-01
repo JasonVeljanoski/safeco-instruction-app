@@ -1,0 +1,17 @@
+{
+  "name": "safeco_app",
+  "version": "1.0.0",
+  "description": "safeco product instructions app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jason Veljanoski",
+  "license": "ISC",
+  "dependencies": {
+    "electron-rebuild": "^1.8.4",
+    "express": "^4.17.0",
+    "sqlite3": "^4.0.8"
+  }
+}

@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.25 63.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 18px;
+      }
+    </style>
+  </defs>
+  <title>backArrowIcon</title>
+  <polyline class="cls-1" points="73.25 54.32 73.25 26.32 9.25 26.32 26.29 42.71 9 26.07 25.42 9"/>
+</svg>

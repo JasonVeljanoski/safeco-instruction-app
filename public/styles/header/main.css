@@ -1,0 +1,275 @@
+/*               HEADER STYLES               */
+
+.header-container {
+  height: 70px;
+}
+
+.the-header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 70px;
+  top: 0;
+  position: fixed;
+  padding: 0 40px 0 20px;
+  border-bottom: solid 1px #efefef;
+}
+
+.logo {
+  max-width: 200px;
+  width: 100%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.navigation-items {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .navigation-items {
+    display: block;
+  }
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+/* Stylig and Animating nav-items */
+.nav-item a {
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+}
+
+.nav-item {
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #1171ba;
+  transition: width .3s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* ----- nav-items ------ */
+
+.header-background {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+/* *************************   sidenav styles  ************************************ */
+.sidebar {
+  flex: 1 1 350px;
+  max-width: 350px;
+  border-right: 1px solid #e5e5e5;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.title {
+  padding: 10px;
+  background-color: rgba(8, 20, 36, 0.84);
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.title h5 {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.title img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.sub_nav {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 6px 10px;
+  align-items: center;
+}
+
+.sub_nav h5 {
+  padding-left: 10px;
+}
+
+.sub_nav:hover {
+  background-color: #f4f5f7;
+  cursor: pointer;
+}
+
+.topic {
+  border-left: 5px solid #2caaca;
+  border-bottom: 1px solid #e5e5e5;
+}
+.topic-green {
+  border-left: 5px solid #27c9b8;
+  border-bottom: 1px solid #e5e5e5;
+}
+.topic-red {
+  border-left: 5px solid #ec6d5f;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.arrow_icon {
+  width: 8px;
+}
+
+.back_arrow_icon {
+  width: 15px;
+}
+
+.back_arrow_icon:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.nav-clicker {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.button {
+  cursor: pointer;
+  background-color: #e5e5e5;
+  padding: 20px;
+}
+
+.tab-nav {
+  width: 100%;
+  overflow-y: scroll;
+}
+.tab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.tab-item {
+  font-weight: 800;
+  padding: 5px 10px;
+  background-color: #f3f3f3;
+  /*border: solid 1px #e5e5e5;*/
+  width: 100%;
+  transition: background-color 0.4s;
+}
+
+.tab-item:hover,
+.tab-item:hover {
+  cursor: pointer;
+  background-color: #e4e4e4;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #e5e5e5;
+  overflow-y: scroll;
+  
+}
+
+
+/*   
+use this binded class to try highlight active product
+:class="{'tab-item-active': selectedProduct.name === product.name }"
+.tab-item-active {
+  color: #f3f3f3 !important;
+  background-color: #454545 !important;
+}
+*/
+
+/* *************************   end sidenav styles  ************************************ */
+
+/* *************************   sidenav toggle styles  ************************************ */
+
+.drawer-toggle {
+  margin-right: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  width: 35px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/*@media (min-width: 1000px) {
+  .drawer-toggle {
+    display: none;
+  }
+} */
+
+.drawer-toggle .bar {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(54, 54, 54);
+}
+
+
+.drawer-toggle:hover {
+  background-color: #f4f5f7;
+  cursor: pointer;
+}
+
+
+/* *************************   end sidenav toggle styles  ************************************ */

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Safeco Instructions App</title>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- document font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto+Slab" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- LOCAL STYLESHEETS  -->
+    <link rel = "stylesheet" type = "text/css" href = "/styles/main.css" />
+    <link rel = "stylesheet" type = "text/css" href = "/styles/header/main.css" />
+    <link rel = "stylesheet" type = "text/css" href = "/styles/default/main.css" />
+</head>
+
+<body>
+    <main>
+        <!---------------------------------- THE HEADER ----------------------------------------->
+        <section id="header" class="header-container">
+            <header class="the-header">
+
+                <!-- SIDENAV TOGGLE -->
+                <section class="drawer-toggle" role="button" aria-label="toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </section>
+
+                <!-- LOGO -->
+                <div class="logo">
+                    <img alt="safeco_logo" src="/images/Logos/logo2.svg">
+                </div>
+                <!-- end LOGO -->
+
+                <!-- SPACER -->
+                <div class="spacer"></div>
+                <!-- end SPACER -->
+
+            </header>
+        </section>
+        <!--     ------------------- END THE HEADER  ------------------------------------------->
+
+        <div class="main">
+
+            <!---------------------------------- THE SIDENAV --------------------------------------->
+            <div class="sidebar sidenav active">
+
+                <div class="subjects">
+
+                    <!-- TITLE BAR WITH BACK NAV CAPABILITY -->
+                    <div class="title">
+                        <img id="backarrow" alt="back_arrow" src="/images/Icons/backArrowIcon.svg">
+                        <h5 id="nav-title">Groups</h5>
+                    </div>
+
+                    <!-- NAVIGATION SECTION -->
+                    <section class="nav-wrapper">
+                        <!-- GROUPS -->
+                        <div class="tab-nav">
+                            <ul id="tab-list" class="tab-list">
+                                <!-- <li class="tab-item">{{ dynamically from database [details in script.js] }}</li> -->
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <!--------------------------------------- END THE SIDENAV  ------------------------------------------->
+
+            <section id="section" class="content">
+                
+                <!---------------------- DISPLAY INSTRUCTIONS ON HOW TO USE APP ----------------------------------->
+                <div id="usage" class="default-sec section">
+                    <img src="/images/Logos/logo2.svg">
+                    <div>
+                        <br>
+                        <p>Please navigate to the product you seek instructions for.</p>
+                        <p>Use the navigation bar.</p>
+                    </div>
+                </div>
+                <!---------------------- END DISPLAY INSTRUCTIONS ON HOW TO USE APP -------------------------------->
+
+                <!--------------------------------- DYNAMIC INSTRUCTIONS [created in the script.js] ----------------------------->
+                                                <!-- here is where the steps will dynamically load -->
+                <!--------------------------------- END DYNAMIC INSTRUCTIONS [created in the script.js] ------------------------->
+            </section>
+        </div>
+    </main>
+
+    <!--  JAVASCRIPTS  -->
+    <script type="text/javascript" src="/scripts/header/sidenav.js"></script>
+    <script type="text/javascript" src="/scripts/script.js"></script>
+</body>
+
+</html>
